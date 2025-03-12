@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "544137008860",
+    "firebase_url": "https://shoesecommerce-6c16b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "shoesecommerce-6c16b",
+    "storage_bucket": "shoesecommerce-6c16b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544137008860:android:664632f7596e482a608619",
+        "android_client_info": {
+          "package_name": "com.example.shoesecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1j2NiaOoxVegsQKsLrJUO2wu6Omp9ELg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544137008860:android:6bbb218f2c77a6e6608619",
+        "android_client_info": {
+          "package_name": "com.fpt.hungnm.assigmentfinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1j2NiaOoxVegsQKsLrJUO2wu6Omp9ELg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
