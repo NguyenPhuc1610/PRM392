@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,81 +6,92 @@
     android:layout_height="match_parent"
     tools:context=".MainStatitics">
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/srv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-            <LinearLayout
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
+                android:layout_height="70dp"
+                android:text="Thống Kê dữ liệu theo tháng"
                 android:gravity="center"
-                >
+                android:textSize="30sp"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:text="Thống Kê dữ liệu theo tháng"
-                    android:gravity="center"
-                    android:textSize="30sp"
-                    android:layout_weight="1"/>
-                <Spinner
-                    android:id="@+id/sp_statistic_month"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"></Spinner>
+            <Spinner
+                android:id="@+id/sp_statistic_month"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="20sp"
-                    android:text="Biểu đồ thống kê tỉ lệ phần trăm các loại tiêu dùng"
-                    android:gravity="center"
-                    android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biểu đồ thống kê tỉ lệ phần trăm các loại tiêu dùng"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
 
-                <com.github.mikephil.charting.charts.PieChart
-                    android:id="@+id/piechart"
-                    android:layout_width="match_parent"
-                    android:layout_height="350dp"
-                    />
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/piechart"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="20sp"
-                    android:text="Biểu đồ thống kê tiền thu nhập các loại theo tháng"
-                    android:gravity="center"
-                    android:layout_marginTop="70dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biểu đồ thống kê tiền thu nhập các loại theo tháng"
+                android:gravity="center"
+                android:layout_marginTop="70dp"/>
 
-                <com.github.mikephil.charting.charts.BarChart
-                    android:id="@+id/bar_chart"
-                    android:layout_width="match_parent"
-                    android:layout_height="500dp">
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_chart"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"/>
 
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"/>
 
-                </com.github.mikephil.charting.charts.BarChart>
+            <!-- Button Logout -->
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng xuất"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginBottom="80dp"
+                android:padding="10dp"
+                android:backgroundTint="@color/design_default_color_primary"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
-                <ListView
-                    android:id="@+id/listview"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="100dp"/>
-            </LinearLayout>
-        </ScrollView>
+    <!-- Thanh điều hướng -->
     <LinearLayout
+        android:id="@+id/navigationBar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
-        android:layout_weight="1"
         android:layout_alignParentBottom="true"
-        android:background="@color/white"
-        android:layout_above="@+id/srv"
-        >
+        android:background="@color/white">
+
         <ImageView
             android:id="@+id/img_statistic_btnHome"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/baseline_home_24"
-            />
+            android:src="@drawable/baseline_home_24"/>
+
         <ImageView
             android:id="@+id/img_statistic_btnTransaction"
             android:layout_width="0dp"
@@ -94,6 +104,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/ic_setting" />
+            android:src="@drawable/ic_setting"/>
     </LinearLayout>
+
 </RelativeLayout>

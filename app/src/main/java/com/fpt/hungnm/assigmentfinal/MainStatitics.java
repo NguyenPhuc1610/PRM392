@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
@@ -241,7 +242,7 @@ public class MainStatitics extends AppCompatActivity implements AdapterView.OnIt
             Log.e(TAG, "Home - btnBudget - " + ex.getMessage());
         }
     }
-    
+
 
     private void bindingView() {
         try{
@@ -268,4 +269,10 @@ public class MainStatitics extends AppCompatActivity implements AdapterView.OnIt
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
+//    private void logout(View view) {
+//        com.fpt.hungnm.assigmentfinal.Utils.Logout.logout(this);
+//    }
+
+
 }

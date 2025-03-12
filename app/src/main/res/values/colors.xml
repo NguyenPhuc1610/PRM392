@@ -11,4 +11,56 @@
     <color name="xam">#D6D6D6</color>
     <color name="gray">#91919F</color>
     <color name="border">#0A000000</color>
+    <color name="green">#4CAF50</color>
+    <!-- Primary Color Palette -->
+    <color name="primary">#3F51B5</color> <!-- Xanh Indigo -->
+    <color name="primaryVariant">#303F9F</color>
+    <color name="secondary">#FF4081</color> <!-- Hồng Accent -->
+    <color name="secondaryVariant">#F50057</color>
+
+
+        <!-- Màu thương hiệu -->
+        <color name="colorPrimary">#6200EE</color>
+        <color name="colorPrimaryDark">#3700B3</color>
+        <color name="colorAccent">#03DAC5</color>
+        <color name="light_gray">#F5F5F5</color>
+        <color name="dark_gray">#757575</color>
+
+        <!-- Màu text -->
+        <color name="primary_text">#212121</color>
+        <color name="secondary_text">#757575</color>
+
+        <!-- Nền layout -->
+        <color name="card_background">#FAFAFA</color>
+        <color name="background">#F9F9F9</color>
+
+        <!-- Trạng thái -->
+        <color name="success">#4CAF50</color>
+        <color name="error">#F44336</color>
+        <color name="warning">#FFC107</color>
+        <color name="info">#2196F3</color>
+
+        <!-- Custom color cho app -->
+        <color name="incomeGreen">#4CAF50</color> <!-- Thu nhập -->
+        <color name="expenseRed">#F44336</color>  <!-- Chi tiêu -->
+        <color name="orange">#FF9800</color>      <!-- Cam -->
+
+
+        <!-- Xám layout -->
+        <color name="xam_nhat">#FAFAFA</color>
+
+        <!-- Icon và button -->
+        <color name="icon_tint">#424242</color>
+        <color name="button_background">#6200EE</color>
+        <color name="button_text">#FFFFFF</color>
+
+        <!-- Bottom nav -->
+        <color name="bottom_nav_background">#FFFFFF</color>
+        <color name="bottom_nav_icon_active">#6200EE</color>
+        <color name="bottom_nav_icon_inactive">#BDBDBD</color>
+
+        <!-- Khác -->
+        <color name="transparent">#00000000</color>
+        <color name="shadow">#33000000</color>
+
 </resources>
