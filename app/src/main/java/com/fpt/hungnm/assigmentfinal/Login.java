@@ -73,13 +73,21 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        // Khởi tạo Firebase Auth
         mAuth = FirebaseAuth.getInstance();
 
-        // Ánh xạ UI
+        // Nếu user chưa logout ➜ chuyển thẳng vào Home luôn
+        if (mAuth.getCurrentUser() != null) {
+            Intent i = new Intent(this, Home.class);
+            startActivity(i);
+            finish();
+            return;
+        }
+
+        // Khởi tạo UI
         binding();
         bindingAction();
     }
+
 
     void binding() {
         btnLogin = findViewById(R.id.btnLogin);

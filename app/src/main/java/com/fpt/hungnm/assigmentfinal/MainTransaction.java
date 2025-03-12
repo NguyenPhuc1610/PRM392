@@ -36,7 +36,7 @@ import java.util.Date;
 import java.util.List;
 
 public class MainTransaction extends AppCompatActivity implements View.OnClickListener {
-    private static final String TAG ="HungnmError";
+    private static final String TAG ="PhucError";
     private static final int REQUEST_CODE =2;
     private RecyclerView rcvTransaction;
     private TransitionSearchAdapter transactionAdapter;

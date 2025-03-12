@@ -159,8 +159,9 @@
     <LinearLayout
         android:id="@+id/ll_transaction_navi"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal">
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
         <ImageView
             android:id="@+id/img_transaction_btnHome"
             android:layout_width="0dp"
