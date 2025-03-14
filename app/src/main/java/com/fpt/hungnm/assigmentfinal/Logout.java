@@ -13,7 +13,7 @@ public class Logout {
 
     public static void performLogout(Context context) {
         try {
-            Log.d(TAG, "Logout started!");
+
 
             // Đăng xuất Firebase
             FirebaseAuth.getInstance().signOut();

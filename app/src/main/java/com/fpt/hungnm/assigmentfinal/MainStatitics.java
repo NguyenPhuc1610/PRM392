@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.fpt.hungnm.assigmentfinal.Dal.MyDbContext;
 import com.fpt.hungnm.assigmentfinal.Model.Category;
@@ -86,12 +87,6 @@ public class MainStatitics extends AppCompatActivity implements AdapterView.OnIt
             btnStatistic = findViewById(R.id.img_statistic_btnAccount);
             if (btnStatistic == null) Log.e(TAG, "btnStatistic is NULL");
             btnLogout = findViewById(R.id.btnLogout);
-            if (btnLogout == null) {
-                Log.e(TAG, "btnLogout is NULL!!!");
-            } else {
-                Log.d(TAG, "btnLogout is OK!!!");
-            }
-
         } catch (Exception ex) {
             Log.e(TAG, "MainStatistics - bindingView - " + ex.getMessage());
         }
@@ -244,12 +239,26 @@ public class MainStatitics extends AppCompatActivity implements AdapterView.OnIt
 
     private void logout(View view) {
         try {
-            Log.d(TAG, "Đang tiến hành Logout...");
-            Logout.performLogout(MainStatitics.this);
+            // Tạo Dialog xác nhận
+            new androidx.appcompat.app.AlertDialog.Builder(this)
+                    .setTitle("Xác nhận đăng xuất")
+                    .setMessage("Bạn có chắc chắn muốn đăng xuất không?")
+                    .setPositiveButton("Có", (dialog, which) -> {
+                        // Nếu nhấn "Có", thực hiện Logout
+                        Logout.performLogout(MainStatitics.this);
+                        Toast.makeText(MainStatitics.this, "Đăng xuất thành công!", Toast.LENGTH_SHORT).show();
+                    })
+                    .setNegativeButton("Không", (dialog, which) -> {
+                        // Nếu nhấn "Không", đóng dialog
+                        dialog.dismiss();
+                    })
+                    .show();
+
         } catch (Exception ex) {
             Log.e(TAG, "MainStatitics - logout - " + ex.getMessage());
         }
     }
+
 
 
 
