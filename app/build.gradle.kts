@@ -4,11 +4,11 @@
 //}
 //
 //android {
-//    namespace = "com.fpt.hungnm.assigmentfinal"
+//    namespace = "com.fpt.phucnth.assigmentfinal"
 //    compileSdk = 34
 //
 //    defaultConfig {
-//        applicationId = "com.fpt.hungnm.assigmentfinal"
+//        applicationId = "com.fpt.phucnth.assigmentfinal"
 //        minSdk = 27
 //        targetSdk = 34
 //        versionCode = 1
@@ -55,11 +55,11 @@ plugins {
 }
 
 android {
-    namespace = "com.fpt.hungnm.assigmentfinal"
+    namespace = "com.fpt.phucnth.assigmentfinal"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.fpt.hungnm.assigmentfinal"
+        applicationId = "com.fpt.phucnth.assigmentfinal"
         minSdk = 27
         targetSdk = 34
         versionCode = 1
